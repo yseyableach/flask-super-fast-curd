@@ -1,0 +1,184 @@
+{
+	"info": {
+		"_postman_id": "2c3590ee-f5ea-48cb-821e-c0ed51b28271",
+		"name": "JayFlaskQuickApiCurd",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "20580812"
+	},
+	"item": [
+		{
+			"name": "game",
+			"item": [
+				{
+					"name": "getOneById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/game?id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"game"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "insertData",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"gameName\":\"英雄聯盟\",\r\n    \"country\": \"台灣\"\r\n}"
+						},
+						"url": "http://localhost:5000/game"
+					},
+					"response": []
+				},
+				{
+					"name": "updateDataById",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"gameName\":\"pornhub\",\r\n    \"country\": \"台22222223333332\",\r\n    \"serial\": \"5\"\r\n}"
+						},
+						"url": "http://localhost:5000/game"
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"serial\": 1\r\n}"
+						},
+						"url": "http://localhost:5000/game"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "getOneById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/user?id=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "insertData",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"英雄聯盟\",\r\n    \"sex\": \"台灣\"\r\n}"
+						},
+						"url": "http://localhost:5000/user"
+					},
+					"response": []
+				},
+				{
+					"name": "updateDataById",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\">_<英雄聯盟>_<\",\r\n    \"sex\": \"台灣><\",\r\n    \"serial\":4\r\n}"
+						},
+						"url": "http://localhost:5000/user"
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"serial\": 7\r\n}"
+						},
+						"url": "http://localhost:5000/user"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
